@@ -1,15 +1,20 @@
 import React from 'react';
-import ProjectList from './ProjectList';
-import FlashCard from './FlashCard'; 
+import Flashcard from './components/Flashcard'; // Import your Flashcard component
+import './App.css'; // Import global styles or additional CSS if needed
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to My Projects</h1>
-      <ProjectList />
-      <hr />
-      <h2>Flashcard Example</h2>
-      <FlashCard /> {}
+      <header>
+        <h1>Flashcards App</h1>
+      </header>
+      <main>
+        {/* Render the Flashcard component */}
+        <Flashcard />
+      </main>
+      <footer>
+        <p>Created with React</p>
+      </footer>
     </div>
   );
 }
