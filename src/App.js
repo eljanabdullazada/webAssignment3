@@ -1,21 +1,13 @@
 import React from 'react';
-import Flashcard from './components/Flashcard'; // Import your Flashcard component
+import FlashcardList from './components/FlashcardList'; 
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header>
-        <h1>Flashcards App</h1>
-      </header>
-      <main>
-        {/* Render the Flashcard component */}
-        <Flashcard />
-      </main>
-      <footer>
-        <p>Created with React</p>
-      </footer>
+      <h1>Flashcards</h1>
+      <FlashcardList />
     </div>
   );
-}
+};
 
 export default App;
