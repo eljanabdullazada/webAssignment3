@@ -1,6 +1,5 @@
 import React from 'react';
 import Flashcard from './components/Flashcard'; // Import your Flashcard component
-import './App.css'; // Import global styles or additional CSS if needed
 
 function App() {
   return (
