@@ -1,8 +1,16 @@
+.flashcard-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
 .card {
-  width: 200px;
+  width: calc((100% - 120px) / 7); 
+  max-width: 200px; 
   height: 300px;
   perspective: 1000px;
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 .card-inner {

@@ -1,7 +1,7 @@
 import React from 'react';
 import Flashcard from './Flashcard'; 
 import flashcardsData from '../data/flashcards.json'; 
-import './Flashcard.css'; // Your CSS file for styling
+import './Flashcard.css'; 
 
 const FlashcardList = () => {
   return (
