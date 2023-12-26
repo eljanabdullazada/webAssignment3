@@ -1,5 +1,5 @@
 import React from 'react';
-import FlashcardList from './components/FlashcardList'; 
+import FlashcardList from './components/FlashcardList';
 
 const App = () => {
   return (
