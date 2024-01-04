@@ -7,39 +7,19 @@ const ContactForm = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
   
-    const data = {
-      name,
-      email,
-      message,
-    };
-  
-    try {
-      const response = await fetch('YOUR_API_ENDPOINT', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
-  
-      if (response.ok) {
-        console.log('Response from server:', await response.json());
+    const newMessage = { name, email, message };
+    const existingMessages = JSON.parse(localStorage.getItem('messages')) || [];
+    existingMessages.push(newMessage);
 
-        setName('');
-        setEmail('');
-        setMessage('');
-      } else {
+    localStorage.setItem('messages', JSON.stringify(existingMessages));
 
-        console.error('HTTP Error:', response.statusText);
+    setName('');
+    setEmail('');
+    setMessage('');
 
-      }
-    } catch (error) {
-      console.error('Network error:', error);
-
-    }
   };
 
   return (
