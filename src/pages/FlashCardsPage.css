@@ -41,7 +41,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    gap: 10px; /* Adds space between controls */
+    gap: 10px; 
   }
   
   .controls input, .controls select, .controls button {

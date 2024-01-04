@@ -15,7 +15,6 @@ const SortingAll = ({ cards, setFilteredCards }) => {
         filtered = filtered.filter(card => card.status === statusFilter);
       }
 
-      // Search functionality
       if (searchTerm) {
         filtered = filtered.filter(card =>
           card.english.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -23,7 +22,6 @@ const SortingAll = ({ cards, setFilteredCards }) => {
         );
       }
 
-      // Sort functionality
       filtered.sort((a, b) => {
         const aValue = a[sortAttribute].toLowerCase();
         const bValue = b[sortAttribute].toLowerCase();
