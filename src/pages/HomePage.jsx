@@ -1,24 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
+import Navbar from '../components/Navbar';
 const HomePage = () => {
   const projects = [
     // Replace with your actual projects
-    { name: 'Project 1', url: 'https://github.com/user/project1' },
-    { name: 'Project 2', url: 'https://github.com/user/project2' },
+    { name: 'Project 1', url: 'https://eljanabdullazada.github.io/AssignmentTwo/' },
+    { name: 'Project 2', url: 'https://github.com/eljanabdullazada/web/settings' },
     // Add more projects as needed
   ];
 
   return (
     <div>
+        <Navbar />
       <h1>Welcome to My Portfolio</h1>
       <p>Here you will find a list of all the projects I have worked on.</p>
       <ul>
         {projects.map((project, index) => (
           <li key={index}>
-            <Link to={{ pathname: project.url }} target="_blank">
+            <a href={project.url} target="_blank" rel="noopener noreferrer">
               {project.name}
-            </Link>
+            </a>
           </li>
         ))}
       </ul>
