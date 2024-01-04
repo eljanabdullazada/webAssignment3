@@ -1,35 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import FlashcardList from './components/FlashcardList';
-import HomePage from './components/HomePage';
-import ContactPage from './components/ContactPage';
-import OtherProjectsPage from './components/OtherProjectsPage';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import FlashCardsPage from './pages/FlashCardsPage';
+import ContactPage from './pages/ContactPage';
 
 const App = () => {
   return (
     <Router>
-      <div className="App">
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/flashcards">Flashcards</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact Me</Link>
-            </li>
-            <li>
-              <Link to="/other-projects">Other Projects</Link>
-            </li>
-          </ul>
-        </nav>
-        <Route path="/" exact component={HomePage} />
-        <Route path="/flashcards" component={FlashcardList} />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/flash-cards" component={FlashCardsPage} />
         <Route path="/contact" component={ContactPage} />
-        <Route path="/other-projects" component={OtherProjectsPage} />
-      </div>
+        {/* Add additional Routes as needed */}
+      </Switch>
     </Router>
   );
 };
