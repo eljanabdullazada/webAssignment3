@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import './HomePage.css'; // This is the correct import statement
+import './HomePage.css'; 
 
 const HomePage = () => {
   const projects = [

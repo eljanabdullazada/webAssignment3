@@ -27,18 +27,18 @@ const ContactForm = () => {
   
       if (response.ok) {
         console.log('Response from server:', await response.json());
-        // Reset the form or provide feedback to the user
+
         setName('');
         setEmail('');
         setMessage('');
       } else {
-        // Handle HTTP errors
+
         console.error('HTTP Error:', response.statusText);
-        // Provide feedback to the user
+
       }
     } catch (error) {
       console.error('Network error:', error);
-      // Provide feedback to the user
+
     }
   };
 

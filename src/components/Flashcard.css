@@ -4,6 +4,7 @@
   perspective: 1000px;
   cursor: pointer;
   margin: 10px;
+  margin-bottom: 40px;
 }
 
 .card.flipped .card-inner {
@@ -31,10 +32,19 @@
   position: absolute; /* check*/
   backface-visibility: hidden;
   display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
   align-items: center;
-  justify-content: center;
   font-size: 24px;
   font-weight: bold;
+}
+
+.card-status-select select, .filter-status-select select {
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
 }
 
 .card-front {
@@ -43,7 +53,7 @@
 }
 
 .card-back {
-  background-color: #28a745; 
+  background-color: #28a785; 
   color: #fff; 
   transform: rotateY(180deg);
 }
@@ -60,7 +70,7 @@
 
 
 .status {
-  background-color: #007bff; /* Change as needed */
+  background-color: #007bff; 
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
@@ -82,3 +92,76 @@
   transform: rotateY(180deg);
 }
 
+.status-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.card-status-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.card-status-buttons button {
+  padding: 5px 15px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.card-status-buttons button:hover {
+  background-color: #e2e2e2;
+}
+
+.status-buttons button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.status-buttons button:hover {
+  background-color: #e2e2e2;
+}
+
+.card-options button.update {
+  background-color: #e6e6e6; 
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.card-options button.delete {
+  background-color: #e6e6e6;
+  border-radius: 10px;
+  margin: 10px; 
+}
+
+.card-options button.update:hover {
+  background-color: #28a745; 
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.card-options button.delete:hover {
+  background-color: #dc3545; 
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.card-options{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.card-last-modified{
+  display: flex;
+  justify-content: center;
+}

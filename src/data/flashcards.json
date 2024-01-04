@@ -139,6 +139,13 @@
       "german": "Brot",
       "status": "Want to Learn",
       "lastModified": "2024-01-04T12:00:00Z"
+    },
+    {
+      "id": 21,
+      "english": "star",
+      "german": "Stern",
+      "status": "Want to Learn",
+      "lastModified": "2024-01-04T12:00:00Z"
     }
   ]
 }

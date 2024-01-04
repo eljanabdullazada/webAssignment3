@@ -10,7 +10,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/flash-cards" element={<FlashCardsPage />} /> {/* Make sure this matches the Navbar link */}
+        <Route path="/flash-cards" element={<FlashCardsPage />} /> 
         <Route path="/contact" element={<ContactForm />} />
       </Routes>
     </Router>

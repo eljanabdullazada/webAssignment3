@@ -1,0 +1,26 @@
+.sorting-all-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .sorting-all-container input,
+  .sorting-all-container select,
+  .sorting-all-container button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .sorting-all-container button {
+    cursor: pointer;
+    background-color: #f0f0f0;
+  }
+  
+  .sorting-all-container button:hover {
+    background-color: #e2e2e2;
+  }
+  
