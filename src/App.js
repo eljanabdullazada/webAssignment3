@@ -1,3 +1,4 @@
+// App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
@@ -8,8 +9,8 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<HomePage />} />
-        <Route path="/flash-cards" element={<FlashCardsPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/flash-cards" element={<FlashCardsPage />} /> {/* Make sure this matches the Navbar link */}
         <Route path="/contact" element={<ContactForm />} />
       </Routes>
     </Router>

@@ -1,9 +1,11 @@
 import React from 'react';
 import './ContactForm.css'; 
-
+import Navbar from '../components/Navbar';
 const ContactForm = () => {
   return (
+
     <div className="contact-form-container">
+      <Navbar/>
       <h2 className="contact-form-title">Contact Us</h2>
       <form>
         <input

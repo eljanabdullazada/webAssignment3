@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Flashcard.css';
 
-const Flashcard = ({ english, german }) => {
+const Flashcard = ({ english, german, status, lastModified }) => {
   const [flipped, setFlipped] = useState(false);
 
   const handleCardClick = () => {
@@ -16,6 +16,10 @@ const Flashcard = ({ english, german }) => {
         </div>
         <div className="card-back">
           <h2>{german}</h2>
+        </div>
+        <div className="card-info">
+          <p><strong>Status:</strong> {status}</p>
+          <p><strong>Last Modified:</strong> {lastModified}</p>
         </div>
       </div>
     </div>

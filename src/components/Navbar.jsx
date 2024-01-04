@@ -17,7 +17,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/flashcards" className="navbar-button-left">
+          <Link to="/flash-cards" className="navbar-button-left"> 
             Flashcards
           </Link>
         </li>

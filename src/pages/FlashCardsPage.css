@@ -1,0 +1,39 @@
+.flashcards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px; 
+  }
+
+  h1{
+    text-align: center;
+  }
+  
+  .flashcard-item {
+    background: white; 
+    border: 1px solid #ddd;
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    text-align: center; 
+  }
+  
+
+  @media (max-width: 1200px) {
+    .flashcards-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .flashcards-container {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .flashcards-container {
+      grid-template-columns: 1fr; 
+    }
+  }
+  

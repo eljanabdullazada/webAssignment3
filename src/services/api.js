@@ -1,18 +1,11 @@
-import axios from 'axios';
+// If you want to keep using the fetchCards function
+import flashcardsData from '../data/flashcards.json'; // Adjust the path if necessary
 
-const api = axios.create({
-  baseURL: 'http://localhost:3000',
-});
-
-export const fetchCards = async () => {
-  try {
-    const response = await api.get('/cards');
-    return response.data;
-  } catch (error) {
-    console.error(error);
-  }
+export const fetchCards = () => {
+  return flashcardsData.flashcards; // Assuming the JSON structure has a 'flashcards' key
 };
 
-// Add more API functions as needed (create, update, delete)
-
-export default api;
+export default {
+  fetchCards,
+  // ... any other exported methods
+};
