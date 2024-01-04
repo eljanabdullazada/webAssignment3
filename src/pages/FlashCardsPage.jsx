@@ -17,6 +17,7 @@ const FlashCardsPage = () => {
     <div>
       <Navbar/>
       <h1>Flash Cards</h1>
+  
       <div className="flashcards-container">
         {flashcards.map((card) => (
           <div key={card.id} className="flashcard-item">

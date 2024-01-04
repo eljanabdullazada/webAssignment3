@@ -22,10 +22,6 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-      <div className="navbar-actions">
-        <button className="navbar-button">Search</button>
-        <button className="navbar-button">Filter by Status</button>
-      </div>
     </nav>
   );
 };
